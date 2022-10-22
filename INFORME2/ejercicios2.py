@@ -186,12 +186,21 @@ boletas=[("2D_3NIÑOS_LUNES", "2D_1ADULTOS_LUNES"),("2D_0NIÑOS_LUNES", "2D_2ADU
    ("3D_0NIÑOS_DOMINGO", "3D_3ADULTOS_DOMINGO"),("2D_3NIÑOS_DOMINGO", "2D_4ADULTOS_DOMINGO"),("3D_1NIÑOS_DOMINGO", "3D_9ADULTOS_DOMINGO")]
 
 boletasVendidas=0
+dineroRecaudado=0
 categoriasSemana={"2":{"NIÑO":5000,"ADULTO":8000},"3":{"NIÑO":8000,"ADULTO":12000}}
 categoriasFinde={"2":{"NIÑO":7000,"ADULTO":9000},"3":{"NIÑO":9000,"ADULTO":15000}}
 
 for j in range(len(boletas)):
     boletasVendidas= int(boletas[j][0][3]) + int(boletas[j][1][3]) + boletasVendidas
 
+    if boletas[j][0][10:] in ["LUNES","MARTES","MIERCOLES","JUEVES","VIERNES"]:
+        
+        dineroRecaudado=int(boletas[j][0][3])*categoriasSemana[boletas[j][0][0]][boletas[j][0][4:8]] + int(boletas[j][1][3])*categoriasSemana[boletas[j][1][0]][boletas[j][1][4:10]] + dineroRecaudado
+    elif boletas[j][0][10:] in ["SABADO","DOMINGO"]:
+
+        dineroRecaudado=int(boletas[j][0][3])*categoriasFinde[boletas[j][0][0]][boletas[j][0][4:8]] + int(boletas[j][1][3])*categoriasFinde[boletas[j][1][0]][boletas[j][1][4:10]] + dineroRecaudado
+
+cine=[boletasVendidas,dineroRecaudado]
 
 
 #------------------------ EJERCICIO 4 --------------------------------
@@ -204,7 +213,42 @@ divisores               * Función que retorne todos los divisores de un numero 
 ¡OJO! => Almacene las funciones de la siguiente manera:
 funciones = [sumaDigitos, verificadorVocales, divisores]
 """
+def sumaDigitos(entero):
 
+    lista=str(entero)
+    sum=0
+
+    for k in range(len(lista)):
+
+        sum=int(lista[k]) + sum
+    return sum
+
+def verificadorVocales(string):
+
+    vericidad= False
+    for l in  range(len(string)):
+
+        if string[l] in ["A","E","I","O","U","a","e","i","o","u"]:
+            vericidad= vericidad or True
+        else:
+            vericidad= vericidad or False
+    
+    return vericidad
+
+def divisores(n):
+
+    div=[]
+    for h in range(2,n):
+        if n%h == 0:
+            div.append(h)
+    if div==[]:
+        print("el numero no tiene divisores")
+    
+    return div
+
+funciones = [sumaDigitos, verificadorVocales, divisores]
+
+print(divisores(3))
 
 #------------------------ EJERCICIO 5 --------------------------------
 
