@@ -93,46 +93,46 @@ Para mayor comprensión, por ejemplo si usted ejecuta estas lineas:
         Es decir, en el primer indexado se podrá insertar el codigo (ej: "001", "002", .."018" (strings)),
         en el segundo indexado se podrá indicar la información de interés ("Nombre", "Cargo", "Salario"  (strings))
 """
-empleados= { "001":{"Nombre" : "Cristian Pachon   ","Cargo":  "Ingeniero    ","Salario": 3200000},
-            "002":{"Nombre" : "Daniela Pineda    ","Cargo":  "Programador  ","Salario": 4300000},
-            "003":{"Nombre" : "Esteban Murcia    ","Cargo":  "Programador  ","Salario": 4600000},
-            "004":{"Nombre" : "Jose Guzman       ","Cargo":  "Ingeniero    ","Salario": 3900000},
-            "005":{"Nombre" : "Camilo Rodriguez  ","Cargo":  "Ensamblador  ","Salario": 1200000},
-            "006":{"Nombre" : "Mariana Londoño   ","Cargo":  "Ensamblador  ","Salario": 1100000},
-            "007":{"Nombre" : "Estefania Muños   ","Cargo":  "Ensamblador  ","Salario": 1700000},
-            "008":{"Nombre" : "Cristian Rodriguez","Cargo":  "Ingeniero    ","Salario": 3100000},
-            "009":{"Nombre" : "Natalia Alzate    ","Cargo":  "Ensamblador  ","Salario": 2200000},
-            "010":{"Nombre" : "Juan Sanabria     ","Cargo":  "Diseñador    ","Salario": 5100000},
-            "011":{"Nombre" : "Juanita Calderon  ","Cargo":  "Ensamblador  ","Salario": 1300000},
-            "012":{"Nombre" : "Laura Quintero    ","Cargo":  "Administrador","Salario": 2500000},
-            "013":{"Nombre" : "Viviana Quesada   ","Cargo":  "Guardia      ","Salario": 1500000},
-            "014":{"Nombre" : "Camila Alzate     ","Cargo":  "Ensamblador  ","Salario": 2000000},
-            "015":{"Nombre" : "Leonidas Sanabria ","Cargo":  "Diseñador    ","Salario": 5200000},
-            "016":{"Nombre" : "Juana Diaz        ","Cargo":  "Ensamblador  ","Salario": 1100000},
-            "017":{"Nombre" : "Laura Playonero   ","Cargo":  "Administrador","Salario": 2300000},
-            "018":{"Nombre" : "Viviana Restrepo  ","Cargo":  "Guardia      ","Salario": 1400000},
-            "019":{"Nombre" : "Elias Rodriguez   ","Cargo":  "Ensamblador  ","Salario": 1200000},
-            "020":{"Nombre" : "Mariana Pacheco   ","Cargo":  "Ensamblador  ","Salario": 1000000},
-            "021":{"Nombre" : "Estefany Muñoz    ","Cargo":  "Ensamblador  ","Salario": 1900000},
-            "022":{"Nombre" : "Cristian Fernandez","Cargo":  "Ingeniero    ","Salario": 3200000},
-            "023":{"Nombre" : "Jessika Arias     ","Cargo":  "Ensamblador  ","Salario": 2100000},
-            "024":{"Nombre" : "Juan Mendoza      ","Cargo":  "Diseñador    ","Salario": 5000000},
-            "025":{"Nombre" : "Maria Calderon    ","Cargo":  "Ensamblador  ","Salario": 1100000},
-            "026":{"Nombre" : "Laura Lozada      ","Cargo":  "Administrador","Salario": 2700000},
-            "027":{"Nombre" : "Yessica Quesada   ","Cargo":  "Guardia      ","Salario": 1300000},
-            "028":{"Nombre" : "Jennifer Alzate   ","Cargo":  "Ensamblador  ","Salario": 2100000},
-            "029":{"Nombre" : "Karen Sanabria    ","Cargo":  "Diseñador    ","Salario": 5000000},
-            "030":{"Nombre" : "Fernando Rodriguez","Cargo":  "Ensamblador  ","Salario": 1300000},
-            "031":{"Nombre" : "Nina Londoño      ","Cargo":  "Ensamblador  ","Salario": 1200000},
-            "032":{"Nombre" : "Favio Munera      ","Cargo":  "Ensamblador  ","Salario": 1400000},
-            "033":{"Nombre" : "Lindsey Roy       ","Cargo":  "Ingeniero    ","Salario": 3200000},
-            "034":{"Nombre" : "Nathalia Hernandez","Cargo":  "Ensamblador  ","Salario": 2100000},
-            "035":{"Nombre" : "Juan Gaviria      ","Cargo":  "Diseñador    ","Salario": 5500000},
-            "036":{"Nombre" : "Fabio Urrego      ","Cargo":  "Ensamblador  ","Salario": 1400000},
-            "037":{"Nombre" : "Fernanda Quintero ","Cargo":  "Administrador","Salario": 2200000},
-            "038":{"Nombre" : "Camila Queiroz    ","Cargo":  "Guardia      ","Salario": 1200000},
-            "039":{"Nombre" : "Ursula Alzate     ","Cargo":  "Ensamblador  ","Salario": 2700000},
-            "040":{"Nombre" : "Aureliano Buendia ","Cargo":  "Diseñador    ","Salario": 5900000},}
+empleados= { "001":{"Nombre" : "Cristian Pachon   ","Cargo":  "Ingeniero    ","Salario":int( 3200000)},
+            "002":{"Nombre" : "Daniela Pineda    ","Cargo":  "Programador  ","Salario": int(4300000)},
+            "003":{"Nombre" : "Esteban Murcia    ","Cargo":  "Programador  ","Salario": int(4600000)},
+            "004":{"Nombre" : "Jose Guzman       ","Cargo":  "Ingeniero    ","Salario": int(3900000)},
+            "005":{"Nombre" : "Camilo Rodriguez  ","Cargo":  "Ensamblador  ","Salario": int(1200000)},
+            "006":{"Nombre" : "Mariana Londoño   ","Cargo":  "Ensamblador  ","Salario": int(1100000)},
+            "007":{"Nombre" : "Estefania Muños   ","Cargo":  "Ensamblador  ","Salario": int(1700000)},
+            "008":{"Nombre" : "Cristian Rodriguez","Cargo":  "Ingeniero    ","Salario": int(3100000)},
+            "009":{"Nombre" : "Natalia Alzate    ","Cargo":  "Ensamblador  ","Salario": int(2200000)},
+            "010":{"Nombre" : "Juan Sanabria     ","Cargo":  "Diseñador    ","Salario": int(5100000)},
+            "011":{"Nombre" : "Juanita Calderon  ","Cargo":  "Ensamblador  ","Salario": int(1300000)},
+            "012":{"Nombre" : "Laura Quintero    ","Cargo":  "Administrador","Salario": int(2500000)},
+            "013":{"Nombre" : "Viviana Quesada   ","Cargo":  "Guardia      ","Salario": int(1500000)},
+            "014":{"Nombre" : "Camila Alzate     ","Cargo":  "Ensamblador  ","Salario": int(2000000)},
+            "015":{"Nombre" : "Leonidas Sanabria ","Cargo":  "Diseñador    ","Salario": int(5200000)},
+            "016":{"Nombre" : "Juana Diaz        ","Cargo":  "Ensamblador  ","Salario": int(1100000)},
+            "017":{"Nombre" : "Laura Playonero   ","Cargo":  "Administrador","Salario": int(2300000)},
+            "018":{"Nombre" : "Viviana Restrepo  ","Cargo":  "Guardia      ","Salario": int(1400000)},
+            "019":{"Nombre" : "Elias Rodriguez   ","Cargo":  "Ensamblador  ","Salario": int(1200000)},
+            "020":{"Nombre" : "Mariana Pacheco   ","Cargo":  "Ensamblador  ","Salario": int(1000000)},
+            "021":{"Nombre" : "Estefany Muñoz    ","Cargo":  "Ensamblador  ","Salario": int(1900000)},
+            "022":{"Nombre" : "Cristian Fernandez","Cargo":  "Ingeniero    ","Salario": int(3200000)},
+            "023":{"Nombre" : "Jessika Arias     ","Cargo":  "Ensamblador  ","Salario": int(2100000)},
+            "024":{"Nombre" : "Juan Mendoza      ","Cargo":  "Diseñador    ","Salario": int(5000000)},
+            "025":{"Nombre" : "Maria Calderon    ","Cargo":  "Ensamblador  ","Salario": int(1100000)},
+            "026":{"Nombre" : "Laura Lozada      ","Cargo":  "Administrador","Salario": int(2700000)},
+            "027":{"Nombre" : "Yessica Quesada   ","Cargo":  "Guardia      ","Salario": int(1300000)},
+            "028":{"Nombre" : "Jennifer Alzate   ","Cargo":  "Ensamblador  ","Salario": int(2100000)},
+            "029":{"Nombre" : "Karen Sanabria    ","Cargo":  "Diseñador    ","Salario": int(5000000)},
+            "030":{"Nombre" : "Fernando Rodriguez","Cargo":  "Ensamblador  ","Salario": int(1300000)},
+            "031":{"Nombre" : "Nina Londoño      ","Cargo":  "Ensamblador  ","Salario": int(1200000)},
+            "032":{"Nombre" : "Favio Munera      ","Cargo":  "Ensamblador  ","Salario": int(1400000)},
+            "033":{"Nombre" : "Lindsey Roy       ","Cargo":  "Ingeniero    ","Salario": int(3200000)},
+            "034":{"Nombre" : "Nathalia Hernandez","Cargo":  "Ensamblador  ","Salario": int(2100000)},
+            "035":{"Nombre" : "Juan Gaviria      ","Cargo":  "Diseñador    ","Salario": int(5500000)},
+            "036":{"Nombre" : "Fabio Urrego      ","Cargo":  "Ensamblador  ","Salario": int(1400000)},
+            "037":{"Nombre" : "Fernanda Quintero ","Cargo":  "Administrador","Salario": int(2200000)},
+            "038":{"Nombre" : "Camila Queiroz    ","Cargo":  "Guardia      ","Salario": int(1200000)},
+            "039":{"Nombre" : "Ursula Alzate     ","Cargo":  "Ensamblador  ","Salario": int(2700000)},
+            "040":{"Nombre" : "Aureliano Buendia ","Cargo":  "Diseñador    ","Salario": int(5900000)}}
 
 #------------------------ EJERCICIO 3 --------------------------------
 """ El costo de las entradas a cine es el siguiente:
@@ -186,9 +186,12 @@ boletas=[("2D_3NIÑOS_LUNES", "2D_1ADULTOS_LUNES"),("2D_0NIÑOS_LUNES", "2D_2ADU
    ("3D_0NIÑOS_DOMINGO", "3D_3ADULTOS_DOMINGO"),("2D_3NIÑOS_DOMINGO", "2D_4ADULTOS_DOMINGO"),("3D_1NIÑOS_DOMINGO", "3D_9ADULTOS_DOMINGO")]
 
 boletasVendidas=0
+categoriasSemana={"2":{"NIÑO":5000,"ADULTO":8000},"3":{"NIÑO":8000,"ADULTO":12000}}
+categoriasFinde={"2":{"NIÑO":7000,"ADULTO":9000},"3":{"NIÑO":9000,"ADULTO":15000}}
 
 for j in range(len(boletas)):
     boletasVendidas= int(boletas[j][0][3]) + int(boletas[j][1][3]) + boletasVendidas
+
 
 
 #------------------------ EJERCICIO 4 --------------------------------
