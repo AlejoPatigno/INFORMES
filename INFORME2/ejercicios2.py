@@ -213,7 +213,7 @@ divisores               * Función que retorne todos los divisores de un numero 
 ¡OJO! => Almacene las funciones de la siguiente manera:
 funciones = [sumaDigitos, verificadorVocales, divisores]
 """
-def sumaDigitos(entero):
+def sumaDigitos(entero=int):
 
     lista=str(entero)
     sum=0
@@ -223,7 +223,7 @@ def sumaDigitos(entero):
         sum=int(lista[k]) + sum
     return sum
 
-def verificadorVocales(string):
+def verificadorVocales(string=str):
 
     vericidad= False
     for l in  range(len(string)):
@@ -235,7 +235,7 @@ def verificadorVocales(string):
     
     return vericidad
 
-def divisores(n):
+def divisores(n=int):
 
     div=[]
     for h in range(2,n):
@@ -248,8 +248,6 @@ def divisores(n):
 
 funciones = [sumaDigitos, verificadorVocales, divisores]
 
-print(divisores(3))
-
 #------------------------ EJERCICIO 5 --------------------------------
 
 """ El salario mensual de un empleado se calcula teniendo en cuenta el numero de seguros vendidos,
@@ -261,3 +259,21 @@ print(divisores(3))
     esta función debe tomar como parámetro de entrada el numero de seguros vendidos (int)
     y debe retormar el salario que se le debe pagar al empleado (int)
 """
+def calcularSalario(n=int):
+
+    b=0
+    c=0
+    if (n-30)>0:
+        a=(n-20)*0.35
+        b=20*0.1
+        if (n-120)>0:
+            a=(n-120)*0.15
+            c=100*0.35
+    else:
+    
+        a=n*0.1
+
+    salario=int((a+b+c)*120000)
+
+    return salario
+
