@@ -1,11 +1,13 @@
 import json
 archivo= "empleados.json"
-ruta = "INFORMES/INFORME3/" + archivo
+ruta = "INFORME3/" + archivo
 opcion = "r"
 with open(ruta, opcion) as file:
     data = json.load(file)
 
 print("lectura de datos=>", data)
+
+
 
 class Empresa:
     #Para crear los atributos
@@ -18,29 +20,29 @@ class Empresa:
     def cargarEmpleados(self, archivo: str):
         import json
         ruta = archivo
-        with open(ruta, "r") as file:
+        opcion = "r"
+        with open(ruta, opcion) as file:
             data = json.load(file)
         print("lectura de datos=>", data)
-
         return data
 
     def leerEmpleados(self):
-        empleados= Empresa.cargarEmpleados("/empleados.json")
+        empleados= data
         listaEmpleados = []
         for i in range(0,len(empleados)):
             listaEmpleados.append(empleados[i]["nombre"])
         return listaEmpleados   
     
-    def agregarNuevoEmpleado(nombre: str, codigo: str, edad: int , cargo: str , añosExperiencia: int):
-        empleados= Empresa.cargarEmpleados("/empleados.json")
-        nuevoEmpleado = {"nombre": nombre    , "codigo": codigo, "edad": edad, "cargo": cargo, "añosExperiencia":añosExperiencia}
+    def agregarNuevoEmpleado(self, nombre: str, codigo: str, edad: int , cargo: str , añosExperiencia: int):
+        empleados= data
+        nuevoEmpleado = {"nombre": nombre , "codigo": codigo, "edad": edad, "cargo": cargo, "añosExperiencia":añosExperiencia}
         empleados.append(nuevoEmpleado)
 
-    def eliminarEmpleado(codigo: str):
-        empleados= Empresa.cargarEmpleados("/empleados.json")
+    def eliminarEmpleado(self, codigo: str):
+        empleados= data
         lista=[]
         for i in empleados:
-            lista.append(i[codigo])
+            lista.append(i["codigo"])
         if codigo in lista:
             posicion=lista.index(codigo)
             empleados.pop(posicion)

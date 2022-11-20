@@ -1,6 +1,7 @@
 """este modulo es la logica y con este modulo haremos la parte logica del juego 
 de 3 en linea. tendremos funciones de obtener tablero logico, actualizar el tablero logico, 
-determinar ganador y determinar si la posicion de una jugada esta ocupada """
+determinar ganador, determinar si la posicion de una jugada esta ocupada y tener una lista del 
+tablero faltante """
 
 def obtenerTableroLogico():
 
