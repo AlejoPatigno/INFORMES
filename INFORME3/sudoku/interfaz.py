@@ -55,12 +55,13 @@ def crearPistas(tableroLogico:list):
     import logica 
     import random
     c=0
-    for i in range(0,3):
+    for i in range(0,5):
         posicion =int( random.choice([0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]))
         caracter = random.choice([1,2,3,4])
         if logica.determinarError(tableroLogico,posicion, caracter):
             tableroLogico = logica.actualizarTableroLogico(tableroLogico, posicion, caracter)
             c=c+1
+    dibujarTablero(tableroLogico)
     return tableroLogico
 
 if __name__ == "__main__":

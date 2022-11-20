@@ -3,6 +3,7 @@ import logica
 
 interfaz.explicarJuego()
 tableroJuego = logica.obtenerTableroLogico()
+tableroJuego = interfaz.crearPistas(tableroJuego)
 posibleGanador = logica.determinarSiGano(tableroJuego)
 
 while posibleGanador == False:
@@ -14,5 +15,5 @@ while posibleGanador == False:
     interfaz.dibujarTablero(tableroJuego)
     posibleGanador = logica.determinarSiGano(tableroJuego)
     if posibleGanador :
-        print("Felicidades ha ganado el juego jugador ")
+        print("Felicidades!!!! ha ganado el juego ")
         break

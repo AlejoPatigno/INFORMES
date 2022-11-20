@@ -60,4 +60,4 @@ empresa1.eliminarEmpleado("002")
 empresa1.eliminarEmpleado("003")
 empresa1.cargarEmpleados("INFORME3/empleados.json")
 
-print(empresa1.leerEmpleados())
+listaEmpleados = empresa1.leerEmpleados()
