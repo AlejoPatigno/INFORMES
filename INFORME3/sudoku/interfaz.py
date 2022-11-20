@@ -3,6 +3,10 @@
      explicacion de como se juega 
 
 """
+import random
+
+print(random.choice([0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]))
+
 def explicarJuego():
     print("""
     
@@ -46,11 +50,23 @@ def dibujarTablero(tableroLogico:list):
     tableroVisual = tableroVisual.replace("None", " ")
     print(tableroVisual)
 
-
+def crearPistas(tableroLogico:list):
+    
+    import logica 
+    import random
+    c=0
+    for i in range(0,3):
+        posicion =int( random.choice([0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]))
+        caracter = random.choice([1,2,3,4])
+        if logica.determinarError(tableroLogico,posicion, caracter):
+            tableroLogico = logica.actualizarTableroLogico(tableroLogico, posicion, caracter)
+            c=c+1
+    return tableroLogico
 
 if __name__ == "__main__":
     explicarJuego()
     tablero1 = [None]*16
     tablero2 = ["x"]*16
+    crearPistas(tablero1)
     dibujarTablero(tablero1)
     dibujarTablero(tablero2)

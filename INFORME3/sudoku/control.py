@@ -1,12 +1,11 @@
 import interfaz
-import logica
+import logica   
 
 interfaz.explicarJuego()
 tableroJuego = logica.obtenerTableroLogico()
 posibleGanador = logica.determinarSiGano(tableroJuego)
 
 while posibleGanador == False:
-    print("\nTurno numero ", turno)
     posicion = int(input("   Ingrese posicion a llenar: "))
     caracter = int(input("ingrese el numero con el que llenar la posicion:  "))
     if logica.determinarError(tableroJuego,posicion, caracter):

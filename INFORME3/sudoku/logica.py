@@ -55,69 +55,69 @@ def determinarError(tableroLogico,posicion, caracter: int):
                 if caracter == tableroLogico[i]:
                     validez=False
         if posicion in fila2:
-            lista1= fila2.copy()
-            lista1.pop(posicion)
-            for i in lista1:
+            lista2= fila2.copy()
+            lista2.pop(posicion)
+            for i in lista2:
                 if caracter == tableroLogico[i]:
                     validez=False
         if posicion in fila3:
-            lista1= fila3.copy()
-            lista1.pop(posicion)
-            for i in lista1:
+            lista3= fila3.copy()
+            lista3.pop(posicion)
+            for i in lista3:
                 if caracter == tableroLogico[i]:
                     validez=False
         if posicion in fila4:
-            lista1= fila4.copy()
-            lista1.pop(posicion)
-            for i in lista1:
+            lista4= fila4.copy()
+            lista4.pop(posicion)
+            for i in lista4:
                 if caracter == tableroLogico[i]:
                     validez=False
         if posicion in columna1:
-            lista1= columna1.copy()
-            lista1.pop(posicion)
-            for i in lista1:
+            lista5= columna1.copy()
+            lista5.pop(posicion)
+            for i in lista5:
                 if caracter == tableroLogico[i]:
                     validez=False
         if posicion in columna2:
-            lista1= columna2.copy()
-            lista1.pop(posicion)
-            for i in lista1:
+            lista6= columna2.copy()
+            lista6.pop(posicion)
+            for i in lista6:
                 if caracter == tableroLogico[i]:
                     validez=False
         if posicion in columna3:
-            lista1= columna3.copy()
-            lista1.pop(posicion)
-            for i in lista1:
+            lista7= columna3.copy()
+            lista7.pop(posicion)
+            for i in lista7:
                 if caracter == tableroLogico[i]:
                     validez=False
         if posicion in columna4:
-            lista1= columna4.copy()
-            lista1.pop(posicion)
-            for i in lista1:
+            lista8= columna4.copy()
+            lista8.pop(posicion)
+            for i in lista8:
                 if caracter == tableroLogico[i]:
                     validez=False
         if posicion in zona1:
-            lista1= zona1.copy()
-            lista1.pop(posicion)
-            for i in lista1:
+            lista9= zona1.copy()
+            lista9.pop(posicion)
+            for i in lista9:
                 if caracter == tableroLogico[i]:
                     validez=False
         if posicion in zona2:
-            lista1= zona2.copy()
-            lista1.pop(posicion)
-            for i in lista1:
+            lista10= zona2.copy()
+            lista10.pop(posicion)
+            for i in lista10:
                 if caracter == tableroLogico[i]:
                     validez=False
         if posicion in zona3:
-            lista1= zona3.copy()
-            lista1.pop(posicion)
-            for i in lista1:
+            lista11= zona3.copy()
+            lista11.pop(posicion)
+            for i in lista11:
                 if caracter == tableroLogico[i]:
                     validez=False
         if posicion in zona4:
-            lista1= zona4.copy()
-            lista1.pop(posicion)
-            for i in lista1:
+            lista12= zona4.copy()
+            lista12.pop(posicion)
+            for i in lista12:
                 if caracter == tableroLogico[i]:
                     validez=False
 
