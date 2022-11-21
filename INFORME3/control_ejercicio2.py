@@ -25,7 +25,7 @@ print(
 x= input("ingrese la base del numero: ")
 n= input("ingrese el numero a convertir: ")
 if x== "1":
-   import Decimal 
+   import moduloDecimal 
    print("""este modulo tiene 3 metodos:
             
             * conversionABinaria
@@ -40,11 +40,11 @@ if x== "1":
             """)
    y=input("ingrese la base a convertir: ")
 
-   if y== "1": print("la conversion es: ", Decimal.convertirABinario(n))
-   if y== "2": print("la conversion es: ", Decimal.convertirAOctal(n))
-   if y== "3": print("la conversion es: ", Decimal.convertirAHexadecimal(n))
+   if y== "1": print("la conversion es: ", moduloDecimal.convertirABinario(n))
+   if y== "2": print("la conversion es: ", moduloDecimal.convertirAOctal(n))
+   if y== "3": print("la conversion es: ", moduloDecimal.convertirAHexadecimal(n))
 if x== "2":
-   import binario 
+   import moduloBinario 
    print("""este modulo tiene 3 metodos:
             
             * conversionADecimal
@@ -59,11 +59,11 @@ if x== "2":
             """)
    y=input("ingrese la base a convertir: ")
 
-   if y== "1": print("la conversion es: ", binario.convertirADecimal(n))
-   if y== "2": print("la conversion es: ", binario.convertirAOctal(n))
-   if y== "3": print("la conversion es: ", binario.convertirAHexadecimal(n))
+   if y== "1": print("la conversion es: ", moduloBinario.convertirADecimal(n))
+   if y== "2": print("la conversion es: ", moduloBinario.convertirAOctal(n))
+   if y== "3": print("la conversion es: ", moduloBinario.convertirAHexadecimal(n))
 if x== "3":
-   import octal
+   import moduloOctal
    print("""este modulo tiene 3 metodos:
             
             * conversionADecimal
@@ -78,11 +78,11 @@ if x== "3":
             """)
    y=input("ingrese la base a convertir: ")
 
-   if y== "1": print("la conversion es: ", octal.convertirADecimal(n))
-   if y== "2": print("la conversion es: ", octal.convertirABinario(n))
-   if y== "3": print("la conversion es: ", octal.convertirAHexadecimal(n))
+   if y== "1": print("la conversion es: ", moduloOctal.convertirADecimal(n))
+   if y== "2": print("la conversion es: ", moduloOctal.convertirABinario(n))
+   if y== "3": print("la conversion es: ", moduloOctal.convertirAHexadecimal(n))
 if x== "4":
-   import hexadecimal
+   import moduloHexadecimal
    print("""este modulo tiene 3 metodos:
             
             * conversionADecimal
@@ -97,6 +97,6 @@ if x== "4":
             """)
    y=input("ingrese la base a convertir: ")
 
-   if y== "1": print("la conversion es: ", hexadecimal.convertirADecimal(n))
-   if y== "2": print("la conversion es: ", hexadecimal.convertirABinario(n))
-   if y== "3": print("la conversion es: ", hexadecimal.convertirAOctal(n))
+   if y== "1": print("la conversion es: ", moduloHexadecimal.convertirADecimal(n))
+   if y== "2": print("la conversion es: ", moduloHexadecimal.convertirABinario(n))
+   if y== "3": print("la conversion es: ", moduloHexadecimal.convertirAOctal(n))

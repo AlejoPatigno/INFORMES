@@ -1,5 +1,5 @@
-import interfaz
-import logica   
+import interfaz_sudoku as interfaz
+import logica_sudoku as logica
 
 interfaz.explicarJuego()
 tableroJuego = logica.obtenerTableroLogico()

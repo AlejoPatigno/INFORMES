@@ -52,7 +52,7 @@ def dibujarTablero(tableroLogico:list):
 
 def crearPistas(tableroLogico:list):
     
-    import logica 
+    import logica_sudoku as logica 
     import random
     c=0
     for i in range(0,5):
