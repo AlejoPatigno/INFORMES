@@ -10,13 +10,13 @@ print("lectura de datos=>", data)
 
 
 class Empresa:
-    #Para crear los atributos
+    
     def __init__(self, nombre: str, ciudad: str, empleados: list):
         self.nombre = nombre
         self.ciudad = ciudad
         self.empleados = empleados
     
-    #Para crear metodos (funciones)
+    
     def cargarEmpleados(self, archivo: str):
         import json
         ruta = archivo
@@ -50,7 +50,7 @@ class Empresa:
     
 
 
-#Como creo el objeto ?
+
 empresa1 = Empresa("software Colombia", "manizales",[])
 
 empresa1.cargarEmpleados("INFORME3/empleados.json")

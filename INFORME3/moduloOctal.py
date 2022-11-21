@@ -18,6 +18,7 @@ def convertirAHexadecimal(n: str):
     return b[2:]
 
 if __name__ == "__main__":
+    n="5"
     conversionDecimal= convertirADecimal(n)
     conversionBinaria= convertirABinario(n)
     conversionHexadecimal = convertirAHexadecimal(n)
