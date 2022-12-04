@@ -1,5 +1,5 @@
-import interfazTriki as interfaz
-import logicaTriki as logica
+import interfazTriqui as interfaz
+import logicaTriqui as logica
 
 interfaz.explicarJuego()
 tableroJuego= logica.obtenerTableroLogico()
